@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import ResumeDetails from "./ResumeDetails";
 
-const API = process.env.REACT_APP_API_URL || "http://localhost:8080";
+const API = process.env.REACT_APP_API_URL || "https://resumeanalyzer-backend-z5sk.onrender.com";
 
 export default function PastResumesTable() {
   const [rows, setRows] = useState([]);
