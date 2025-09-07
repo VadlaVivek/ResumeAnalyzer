@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import axios from "axios";
-import './component.css';
 
-const API = process.env.REACT_APP_API_URL || "http://localhost:8080";
+const API = process.env.REACT_APP_API_URL || "https://resumeanalyzer-backend-z5sk.onrender.com";
 
 export default function ResumeUploader({ onAnalyzed }) {
   const [file, setFile] = useState(null);
